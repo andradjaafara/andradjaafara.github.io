@@ -1,0 +1,32 @@
+project:
+  type: website
+  resources:
+    - CNAME
+  output-dir: docs
+
+execute:
+    freeze: auto
+
+website:
+  title: "AffCom Lab"
+  navbar:
+    background: primary
+    right:
+      - href: news.qmd
+        text: News
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: contact.qmd
+        text: Contact
+  page-footer: "Copyright 2024 &copy; Jeffrey Girard"
+  google-analytics: "G-K5TXS64QLN"
+  site-url: https://affcom.ku.edu
+  repo-url: https://github.com/jmgirard/affcomlab
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
