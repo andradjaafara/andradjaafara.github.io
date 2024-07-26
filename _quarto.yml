@@ -1,7 +1,5 @@
 project:
   type: website
-  resources:
-    - CNAME
   output-dir: docs
 
 execute:
@@ -21,7 +19,6 @@ website:
       - href: contact.qmd
         text: Contact
   page-footer: "Copyright 2024 &copy; Bimandra Djaafara"
-  google-analytics: "G-K5TXS64QLN"
   site-url: https://andradjaafara.github.io
   repo-url: https://github.com/andradjaafara/andradjaafara.github.io
 
