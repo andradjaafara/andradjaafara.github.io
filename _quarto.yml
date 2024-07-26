@@ -5,14 +5,11 @@ project:
 website:
   title: "Bimandra Djaafara"
   navbar:
-    background: primary
     right:
       - href: index.qmd
         text: Home
       - about.qmd
   page-footer: "Copyright 2024 &copy; Bimandra Djaafara"
-  site-url: https://andradjaafara.github.io
-  repo-url: https://github.com/andradjaafara/andradjaafara.github.io
 
 format:
   html:
