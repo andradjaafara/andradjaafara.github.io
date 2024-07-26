@@ -3,13 +3,14 @@ project:
   output-dir: docs
 
 website:
-  title: "Bimandra Djaafara"
+  title: "Bimandra Djaafara (Andra)"
   navbar:
     right:
       - href: index.qmd
         text: Home
-      - about.qmd
-  page-footer: "Copyright 2024 &copy; Bimandra Djaafara"
+      - href: publications.qmd
+        text: Publications
+  page-footer: "&copy; 2024"
 
 format:
   html:

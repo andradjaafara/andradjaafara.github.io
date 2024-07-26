@@ -1,5 +1,7 @@
 ---
 title: "Bimandra Djaafara"
+subtitle: "Research Fellow"
+description: "National University of Singapore"
 image: img/photo.jpg
 about:
   template: trestles
@@ -12,9 +14,17 @@ about:
     - text: GitHub
       icon: github
       href: https://github.com/andradjaafara
+    - text: Scholar
+      icon: mortarboard-fill
+      href: https://scholar.google.com/citations?user=Ck1JrcIAAAAJ&hl=en
   id: ppc
 ---
-
 :::{#ppc}
-Hello, my name is Andra. I am an infectious disease epidemiologist and modeller with a strong interest in applying and developing statistical and mathematical models to understand the dynamics of infectious diseases through various data sources. My research focuses on developing and applying models (statistical and mathematical) to help inform public health policies and interventions aimed at controlling and preventing the spread of infectious diseases. I have no particular disease of interest, but I have been involved in multiple projects related to malaria, COVID-19, and diphtheria.
+# About me
+
+Hello, my name is Andra. I am an infectious disease epidemiologist and modeller with a strong interest in applying and developing statistical and mathematical models to understand the dynamics of infectious diseases through various data sources. My research focuses on developing and applying models (statistical and mathematical) to help inform public health policies and interventions aimed at controlling the spread of infectious diseases. I have been involved in multiple projects related to malaria, dengue, COVID-19, and diphtheria.
+
+I am currently a Research Fellow at [Saw Swee Hock School of Public Health, National University of Singapore](https://sph.nus.edu.sg/). I am also a member of MLGH-SG chapter (Machine Learning for Global Health, Singapore chapter).
+
+I did statistics for my undergraduate study at [IPB University](https://stat.ipb.ac.id/). For my graduate studies, I had an MSc in Epidemiology, an MRes in Biomedical Research, and a PhD in Epidemiology, Evolution, and Control of Infectious Diseases, all from [Imperial College London](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/).
 :::

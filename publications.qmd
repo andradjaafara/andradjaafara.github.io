@@ -1,0 +1,9 @@
+---
+pagetitle: "Bimandra Djaafara"
+title: "Publications"
+# page-layout: full
+toc: false
+---
+
+::: {.lead}
+:::
