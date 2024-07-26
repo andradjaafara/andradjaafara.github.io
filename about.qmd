@@ -1,0 +1,10 @@
+---
+pagetitle: "Bimandra Djaafara"
+title: "About"
+# page-layout: full
+toc: false
+---
+
+::: {.lead}
+I am an infectious disease epidemiologist and modeller with a strong interest in applying and developing statistical and mathematical models to understand the dynamics of infectious diseases through various data sources. My research focuses on developing and applying models (statistical and mathematical) to help inform public health policies and interventions aimed at controlling and preventing the spread of infectious diseases. I have no particular disease of interest, but I have been involved in multiple projects related to malaria, COVID-19, and diphtheria.
+:::
