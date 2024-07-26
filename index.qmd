@@ -28,5 +28,5 @@ I am currently a Research Fellow at [Saw Swee Hock School of Public Health, Nati
 
 I did statistics for my undergraduate study at [IPB University](https://stat.ipb.ac.id/). For my graduate studies, I had an MSc in Epidemiology, an MRes in Biomedical Research, and a PhD in Epidemiology, Evolution, and Control of Infectious Diseases, all from [Imperial College London](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/).
 
-I initiated a community for Indonesian infectious disease modellers to share knowledge and collaborate called [Indonesia Infectious Disease Modelling Community (INDEMIC)](https://sites.google.com/view/indemic/home).
+I co-initiated a community for Indonesian infectious disease modellers to share knowledge and collaborate called [Indonesia Infectious Disease Modelling Community (INDEMIC)](https://sites.google.com/view/indemic/home).
 :::
