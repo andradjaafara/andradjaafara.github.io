@@ -10,14 +10,8 @@ website:
   navbar:
     background: primary
     right:
-      - href: news.qmd
-        text: News
-      - href: research.qmd
-        text: Research
-      - href: publications.qmd
-        text: Publications
-      - href: contact.qmd
-        text: Contact
+      - href: index.qmd
+        text: Home
   page-footer: "Copyright 2024 &copy; Bimandra Djaafara"
   site-url: https://andradjaafara.github.io
   repo-url: https://github.com/andradjaafara/andradjaafara.github.io
