@@ -8,7 +8,7 @@ execute:
     freeze: auto
 
 website:
-  title: "AffCom Lab"
+  title: "Bimandra Djaafara"
   navbar:
     background: primary
     right:
@@ -20,10 +20,10 @@ website:
         text: Publications
       - href: contact.qmd
         text: Contact
-  page-footer: "Copyright 2024 &copy; Jeffrey Girard"
+  page-footer: "Copyright 2024 &copy; Bimandra Djaafara"
   google-analytics: "G-K5TXS64QLN"
-  site-url: https://affcom.ku.edu
-  repo-url: https://github.com/jmgirard/affcomlab
+  site-url: https://andradjaafara.github.io
+  repo-url: https://github.com/andradjaafara/andradjaafara.github.io
 
 format:
   html:
