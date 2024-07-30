@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="National University of Singapore">
 
-<title>Bimandra Djaafara (Andra) - Bimandra Djaafara</title>
+<title>Bimandra Djaafara – Bimandra Djaafara (Andra)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -96,9 +96,13 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -122,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-about-trestles content">
+<div class="quarto-about-trestles">
   <div class="about-entity">
     <img src="img/photo.jpg" class="about-image
   round " style="height: 10em; width: 10em;">
@@ -161,6 +165,9 @@ ul.task-list li input[type="checkbox"] {
 <p>I am currently a Research Fellow at <a href="https://sph.nus.edu.sg/">Saw Swee Hock School of Public Health, National University of Singapore</a>. I am also a member of MLGH-SG chapter (Machine Learning for Global Health, Singapore chapter).</p>
 <p>I did statistics for my undergraduate study at <a href="https://stat.ipb.ac.id/">IPB University</a>. For my graduate studies, I had an MSc in Epidemiology, an MRes in Biomedical Research, and a PhD in Epidemiology, Evolution, and Control of Infectious Diseases, all from <a href="https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/">Imperial College London</a>.</p>
 <p>I co-initiated a community for Indonesian infectious disease modellers to share knowledge and collaborate called <a href="https://sites.google.com/view/indemic/home">Indonesia Infectious Disease Modelling Community (INDEMIC)</a>.</p>
+<p>I am also a part of the early career researcher (ECR) committee for Infectious Disease Modelling conference 2024. This conference will be held on 6-8 November 2024 in Bangkok. If you are interested in attending or submitting your abstract, please follow this link: <a href="https://idmconference.net/" class="uri">https://idmconference.net/</a></p>
+<p>I am also a guest editor for the special issue of Infectious Disease Modelling journal focused on advancing infectious disease modelling and its application to health policy in LMICs. Please follow this link if you are interested in submitting your work: <a href="https://www.keaipublishing.com/en/journals/infectious-disease-modelling/call-for-papers/advancing-infectious-disease-modelling-to-inform-health-decision-making-in-low-and-middle-income-countries/" class="uri">https://www.keaipublishing.com/en/journals/infectious-disease-modelling/call-for-papers/advancing-infectious-disease-modelling-to-inform-health-decision-making-in-low-and-middle-income-countries/</a></p>
+<p>I always open for collaborations and talking about anything related to modelling in Indonesia context. Please don’t hesitate to contact me. Thank you!</p>
 </section>
 </div></div>
 </div>
@@ -198,18 +205,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -241,7 +237,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -249,7 +267,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

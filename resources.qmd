@@ -1,0 +1,16 @@
+---
+pagetitle: "Bimandra Djaafara"
+title: "Resources"
+# page-layout: full
+toc: false
+---
+
+::: {.lead}
+I made these resources mainly in Indonesian to increase accessibility for Indonesians wanting to learn about infectious disease modelling. I tried my best to attribute sources within each materials. 
+
+For html materials, please right-click then Save Link As (untuk materi bertipe html, klik kanan pada link lalu Save Link As).
+
+1. [Introduction to programming with R (Pengantar pemrograman dengan R)](https://raw.githubusercontent.com/andradjaafara/intro_to_R/main/intro_to_R_bimandra_djaafara.html)
+
+
+:::
