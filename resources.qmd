@@ -12,5 +12,6 @@ For html materials, please right-click then Save Link As (untuk materi bertipe h
 
 1. [Introduction to programming with R (Pengantar pemrograman dengan R)](https://raw.githubusercontent.com/andradjaafara/intro_to_R/main/intro_to_R_bimandra_djaafara.html)
 
+2. [SIR model with odin in R (Pemodelan penyakit infeksi SIR dengan package odin di R)](https://raw.githubusercontent.com/andradjaafara/intro_sir_model_R/main/intro_sir_model_R.html)
 
 :::
