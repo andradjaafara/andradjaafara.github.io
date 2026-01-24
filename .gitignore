@@ -4,3 +4,6 @@
 .Ruserdata
 
 /.quarto/
+
+# Claude context file
+claude.md

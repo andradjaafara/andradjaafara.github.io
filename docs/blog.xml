@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Bimandra Djaafara (Andra)</title>
+<link>https://andradjaafara.github.io/blog.html</link>
+<atom:link href="https://andradjaafara.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.5.55</generator>
+<lastBuildDate>Thu, 23 Jan 2025 16:00:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome to my blog</title>
+  <dc:creator>Bimandra Djaafara</dc:creator>
+  <link>https://andradjaafara.github.io/posts/2025-01-24-welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Welcome to my blog! I’ve decided to start writing occasionally about my work and interests in infectious disease modelling.</p>
+<section id="what-to-expect" class="level2">
+<h2 class="anchored" data-anchor-id="what-to-expect">What to expect</h2>
+<p>I plan to write about:</p>
+<ul>
+<li><strong>Research updates</strong>: Sharing thoughts on ongoing projects and new publications</li>
+<li><strong>Methods and tutorials</strong>: Occasional posts about modelling approaches and tools</li>
+<li><strong>Reflections</strong>: Thoughts on academia, collaboration, and the research process</li>
+<li><strong>Community</strong>: Updates from INDEMIC and other collaborative efforts</li>
+</ul>
+</section>
+<section id="why-start-a-blog" class="level2">
+<h2 class="anchored" data-anchor-id="why-start-a-blog">Why start a blog?</h2>
+<p>As researchers, we often focus on formal publications, but I think there’s value in sharing more informal thoughts and updates. It’s also a way to document my journey and connect with others interested in similar topics.</p>
+<p>Feel free to reach out if you’d like to discuss any of the topics I write about!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>personal</category>
+  <guid>https://andradjaafara.github.io/posts/2025-01-24-welcome/</guid>
+  <pubDate>Thu, 23 Jan 2025 16:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

@@ -93,8 +93,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./news.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./resources.html" aria-current="page"> 
@@ -134,14 +142,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="lead">
-<p>I made these resources mainly in Indonesian to increase accessibility for Indonesians wanting to learn about infectious disease modelling. I tried my best to attribute sources within each materials.</p>
-<p>For html materials, please right-click then Save Link As (untuk materi bertipe html, klik kanan pada link lalu Save Link As).</p>
+<p>I made these resources mainly in Indonesian to increase accessibility for Indonesians wanting to learn about infectious disease modelling. I tried my best to attribute sources within each material.</p>
+<p>For HTML materials, please right-click then Save Link As (untuk materi bertipe HTML, klik kanan pada link lalu Save Link As).</p>
 <ol type="1">
 <li><p><a href="https://raw.githubusercontent.com/andradjaafara/intro_to_R/main/intro_to_R_bimandra_djaafara.html">Introduction to programming with R (Pengantar pemrograman dengan R)</a></p></li>
 <li><p><a href="https://raw.githubusercontent.com/andradjaafara/intro_sir_model_R/main/intro_sir_model_R.html">SIR model with odin in R (Pemodelan penyakit infeksi SIR dengan package odin di R)</a></p></li>
 </ol>
-</div>
 
 
 
@@ -238,7 +244,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/andradjaafara\.github\.io");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -573,7 +579,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>© 2024</p>
+<p>© 2025 Bimandra Djaafara</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

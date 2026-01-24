@@ -1,0 +1,13 @@
+---
+pagetitle: "Bimandra Djaafara"
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  feed: true
+toc: false
+---
+
+Thoughts on infectious disease modelling, research, and other topics.

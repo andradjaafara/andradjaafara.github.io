@@ -1,0 +1,37 @@
+---
+pagetitle: "Bimandra Djaafara"
+title: "News & Updates"
+toc: false
+---
+
+## 2026
+
+- **January 2026**: Happy new year! (Finally) Updated this personal website
+
+## 2025
+
+- **November 2025**: Teaching assistant for Modelling and Analysis of Serological Data: An Introductory Short Course (Ho Chi Minh City, Vietnam)
+- **October 2025**: Second Modra Workshop (Ho Chi Minh City, Vietnam)
+- **September 2025**: First MODRA workshop (Bangkok, Thailand)
+- **July 2025**: Got accepted for MORU-OUCRU Discovery Research Academy program (MODRA) [cohort 2](https://www.oucru.org/modra-announces-2025-cohort/)!
+- **June 2025**: MIDSEA Summer School 2025 in Indonesia! I taught inference track and assisted our brilliant local organiser from Dept. of Mathematics, UGM to ensure things were run smoothly (Yogyakarta, Indonesia)
+- **April 2025**: Participated in [dengue multisource suveillance workshop](https://www.who.int/indonesia/news/detail/16-05-2025-indonesia-and-who-ramp-up-dengue-fight-with-smarter-surveillance) which is the follow up from the 2024 one (Semarang, Indonesia)
+- **February 2025**: Gave a half-day online workshop on 'Modeling Infectious Disease Transmission to Mitigate Potential Outbreak Threats', which is part of GAMA-ICTM 2025 conference (Yogyakarta, Indonesia) 
+
+## 2024
+
+- **November 2024**: Participated in Collaboratory Workshop: Dengue Analytics Workshop (Berlin, Germany)
+- **November 2024**: Participated in the Infectious Disease Modelling Conference 2024 in Bangkok as part of the early career researcher (ECR) committee (Bangkok, Thailand)
+- **August 2024**: Participated and [presented](https://www.youtube.com/watch?v=u9ls9IjslzY) in [Isaac Newton Institute's Modelling and inference for pandemic preparedness](https://www.newton.ac.uk/event/mip/) (Cambridge, the UK)
+- **July 2024**: Participated in [dengue multisource suveillance workshop](https://www.who.int/indonesia/news/detail/30-07-2024-indonesia-takes-decisive--pioneering-action-to-strengthen-multisource-collaborative-surveillance-for-dengue) (Semarang, Indonesia)
+- **June 2024**: Participated in MIDSEA Summer School 2024 (Quy Nhon, Vietnam). I taught the inference track for one day and then took the geospatial modelling track
+- **April 2024**: Joined Saw Swee Hock School of Public Health, National University of Singapore as Research Fellow
+- **February 2024**: Left Imperial College London (and London) after 5.5 years
+
+## 2023
+
+- **August 2023**: Completed my PhD at the School of Public Health, Imperial College London and started my postdoc there
+
+---
+
+*This page is updated periodically with news about publications, presentations, awards, and other milestones.*

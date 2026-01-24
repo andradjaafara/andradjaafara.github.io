@@ -1,21 +1,30 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "posts/**/*.qmd"
+    - "!claude.md"
 
 website:
   title: "Bimandra Djaafara (Andra)"
+  site-url: https://andradjaafara.github.io
   navbar:
     right:
       - href: index.qmd
         text: Home
+      - href: news.qmd
+        text: News
       - href: publications.qmd
         text: Publications
+      - href: blog.qmd
+        text: Blog
       - href: resources.qmd
         text: Resources
-  page-footer: "&copy; 2024"
+  page-footer: "&copy; 2025 Bimandra Djaafara"
 
 format:
   html:
-    theme: cosmo
+    theme: litera
     css: styles.css
     toc: true

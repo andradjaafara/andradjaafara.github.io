@@ -1,0 +1,24 @@
+---
+title: "Welcome to my blog"
+description: "A brief introduction to what I'll be writing about here."
+author: "Bimandra Djaafara"
+date: "2025-01-24"
+categories: [news, personal]
+---
+
+Welcome to my blog! I've decided to start writing occasionally about my work and interests in infectious disease modelling.
+
+## What to expect
+
+I plan to write about:
+
+- **Research updates**: Sharing thoughts on ongoing projects and new publications
+- **Methods and tutorials**: Occasional posts about modelling approaches and tools
+- **Reflections**: Thoughts on academia, collaboration, and the research process
+- **Community**: Updates from INDEMIC and other collaborative efforts
+
+## Why start a blog?
+
+As researchers, we often focus on formal publications, but I think there's value in sharing more informal thoughts and updates. It's also a way to document my journey and connect with others interested in similar topics.
+
+Feel free to reach out if you'd like to discuss any of the topics I write about!

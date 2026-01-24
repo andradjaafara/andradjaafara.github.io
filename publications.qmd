@@ -1,29 +1,30 @@
 ---
 pagetitle: "Bimandra Djaafara"
 title: "Publications"
-# page-layout: full
 toc: false
 ---
-
-::: {.lead}
 
 ```{r bibArticle}
 #| results: asis
 #| echo: false
 
-RefManageR::BibOptions(check.entries = FALSE, 
+RefManageR::BibOptions(check.entries = FALSE,
                        style = "markdown",
                        bib.style = "numeric",
                        sorting = "ydnt",
-                       max.names=99)
+                       max.names = 99)
 
-bib <- RefManageR::ReadBib("publications.bib", .Encoding = "UTF-8", 
+bib <- RefManageR::ReadBib("publications.bib", .Encoding = "UTF-8",
                            check = 'warn')
 
-# All Article entries type
-bibArticle <- bib[bibtype="Article"] 
+# All entries (articles and preprints)
+bibArticle <- bib
 
-print(bibArticle)
+# Capture output and highlight author name
+output <- capture.output(print(bibArticle))
+output <- gsub("Djaafara", "**Djaafara**", output)
+output <- gsub("Djafaara", "**Djafaara**", output)  # alternate spelling
+output <- gsub("\\s*\\(visited on [^)]+\\)", "", output)  # remove "visited on" dates
+output <- gsub("(https://www\\.medrxiv\\.org)", "**[Preprint]** \\1", output)  # mark preprints
+cat(output, sep = "\n")
 ```
-
-:::
