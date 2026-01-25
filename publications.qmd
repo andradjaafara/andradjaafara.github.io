@@ -22,9 +22,14 @@ bibArticle <- bib
 
 # Capture output and highlight author name
 output <- capture.output(print(bibArticle))
-output <- gsub("Djaafara", "**Djaafara**", output)
-output <- gsub("Djafaara", "**Djafaara**", output)  # alternate spelling
+output <- paste(output, collapse = "\n")  # collapse to single string for multi-line patterns
+output <- gsub("B\\. A\\. Djaafara", "**B. A. Djaafara**", output)
+output <- gsub("B\\. Djaafara", "**B. Djaafara**", output)
+output <- gsub("B\\. A\\. Djafaara", "**B. A. Djafaara**", output)  # alternate spelling
+output <- gsub("B\\. Djafaara", "**B. Djafaara**", output)  # alternate spelling
 output <- gsub("\\s*\\(visited on [^)]+\\)", "", output)  # remove "visited on" dates
+output <- gsub("URL:\\s*\\[.+?\\]\\(.+?\\)", "", output, perl=TRUE)  # remove redundant URL links (DOI is enough)
+output <- gsub("\\.\\s*\\.", ".", output)  # clean up double periods
 output <- gsub("(https://www\\.medrxiv\\.org)", "**[Preprint]** \\1", output)  # mark preprints
-cat(output, sep = "\n")
+cat(output)
 ```

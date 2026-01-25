@@ -21,6 +21,8 @@ website:
         text: Blog
       - href: resources.qmd
         text: Resources
+      - href: cv-short.pdf
+        text: CV
   page-footer: "&copy; 2025 Bimandra Djaafara"
 
 format:
