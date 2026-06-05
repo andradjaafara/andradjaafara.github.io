@@ -6,6 +6,10 @@ toc: false
 
 ## 2026
 
+- **June 2026**: Our new [paper](https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006519) on the usability of epidemic forecasts for policymakers is out, led by Paula Christen and OJ Watson 
+- **May 2026**: Attended PREPARE - TF READI: Policy-driven Infectious Diseases Modelling Workshop. What a great meeting! A lot was discussed on how to use modelling for policy and how policymakers and modellers should work together. I had the opportunity to talk about my experience working with policymakers in Indonesia and moderating a fireside chat with Azra Ghani!
+- **May 2026**: Went to Krabi, Thailand to attend MIDSEA Fiesta where we discussed the future of our beloved modeling community!
+- **March 2026**: Our [paper](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0014135) on dengue transmission heterogenenity across in Indonesia is out
 - **January 2026**: Happy new year! (Finally) Updated this personal website
 
 ## 2025
