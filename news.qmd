@@ -1,32 +1,53 @@
 ---
 pagetitle: "Bimandra Djaafara"
-title: "News & Updates"
+title: "Updates"
 toc: false
 ---
 
 ## 2026
 
-- **June 2026**: Our new [paper](https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006519) on the usability of epidemic forecasts for policymakers is out, led by Paula Christen and OJ Watson 
+- **September 2026**: Invited to give a talk on using mathematical models to inform dengue vaccination decisions at [APVRN](https://www.mcri.edu.au/research/projects/apvrn) Masterclass 2026 (Yogyakarta, Indonesia)
+- **September 2026**: A milestone for [INDEMIC](https://www.indemic.id/) — we delivered a 5-day workshop on Mathematical Modelling of Infectious Diseases at Monash University Malaysia as part of [SPARKLE](https://sparkle.mccml.my/). Very honoured and thank you SPARKLE for the support!
+- **September 2026**: Honoured to be invited to give an [online keynote speech](https://pohalaa.ung.ac.id/symomath/scheduled/2026) at Symposium on Biomathematics (Symomath) 2026, talking about serocatalytic models for infectious disease control in Indonesia. Thank you Indonesia Biomathematics Society (IBMS)!
+- **September 2026**: Gave a one-day workshop on Introduction to Infectious Disease Modelling for Public Health Practitioners at the Center for Tropical Medicine, Universitas Gadjah Mada. Very happy to discuss infectious disease modelling with academics and public health practitioners in Yogyakarta!
+- **August 2026**: Invited to give a guest lecture on Bayesian Thinking and Analysis for Health Research at Faculty of Medicine, Public Health and Nursing, Universitas Gadjah Mada
+- **August 2026**: Finally able to visit ITB to present our hierarchical catalytic model for dengue force of infection estimation at the [Indonesia-UK Initiative for Vector-Borne Disease Modelling Workshop](https://fmipa.itb.ac.id/vectorborneworkshop2026/#1771475696940-6cb73e7b-a667) (Bandung, Indonesia)
+- **July 2026**: Our dengue hierarchical catalytic model [preprint](https://doi.org/10.64898/2026.07.15.26358208) is out — still a work in progress and will be updated soon!
+- **July 2026**: Very proud to receive a [SPARKLE](https://sparkle.mccml.my/) early career seed grant together with Dr Rabiah Aladawiyah (University of Melbourne) as co-PI! We will be working on the economic burden and care-seeking pathways for malaria in pregnancy in Papua, Indonesia.
+- **June 2026**: Attended [ESPIDAM Summer School 2026](https://www.statistics.su.se/english/divisions/department-of-mathematics/research/conferences-and-seminars/espidam-the-european-summer-program-in-infectious-disease-analysis-and-modelling) in Stockholm where I learned about phylodynamics and within-host modelling, and also presented a poster on our dengue hierarchical catalytic model work
+- **June 2026**: Presented our work-in-progress on modelling subnational measles SIA campaigns in Indonesia for measles elimination at the [Measles Analytics Hub](https://www.measles-analytics.org/) annual meeting 2026. Thank you MAH for the support!
+- **June 2026**: Very proud to be a collaborator on this [paper](https://doi.org/10.1038/s44528-026-00009-2) led by Liza Hadley on the importance of understanding government needs and perspectives to make infectious disease modelling useful for policy — a piece that grew out of the INI meeting back in 2024!
+- **June 2026**: Our new [paper](https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006519) on the usability of epidemic forecasts for policymakers is out, led by Paula Christen and OJ Watson
 - **May 2026**: Attended PREPARE - TF READI: Policy-driven Infectious Diseases Modelling Workshop. What a great meeting! A lot was discussed on how to use modelling for policy and how policymakers and modellers should work together. I had the opportunity to talk about my experience working with policymakers in Indonesia and moderating a fireside chat with Azra Ghani!
-- **May 2026**: Went to Krabi, Thailand to attend MIDSEA Fiesta where we discussed the future of our beloved modeling community!
+- **May 2026**: Went to Krabi, Thailand to attend MIDSEA Fiesta where we discussed the future of our beloved modelling community!
 - **March 2026**: Our [paper](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0014135) on dengue transmission heterogenenity across in Indonesia is out
+- **March 2026**: Our [paper](https://www.sciencedirect.com/science/article/pii/S2468042725000855) on modeling the transmission dynamics and control strategies during the 2017 diphtheria outbreak in Jakarta is out
+- **February 2026**: Very grateful to receive a sub award from the [Measles Analytics Hub](https://www.measles-analytics.org/) (Imperial College London) to work on modelling SIA strategies for measles elimination in Indonesia.
 - **January 2026**: Happy new year! (Finally) Updated this personal website
 
 ## 2025
 
+- **December 2025**: Our [paper](https://www.sciencedirect.com/science/article/pii/S1755436525000520) on Global South researchers' journeys through Global North academic training — "The bridge between two worlds" — is out in Epidemics
 - **November 2025**: Teaching assistant for Modelling and Analysis of Serological Data: An Introductory Short Course (Ho Chi Minh City, Vietnam)
+- **November 2025**: Our [paper](https://doi.org/10.1098/rsif.2025.0445) on estimating dengue force of infection from age-stratified surveillance data in Java, Indonesia is out in Journal of The Royal Society Interface
+- **October 2025**: Finally visited Papua where we conducted a 5-day workshop on introduction to mathematical modelling for infectious diseases. All trainers were from our Indonesia ID modelling community, [INDEMIC](https://www.indemic.id/). Thank you [SPARKLE](https://www.spark.edu.au/) for the support!
 - **October 2025**: Second Modra Workshop (Ho Chi Minh City, Vietnam)
 - **September 2025**: First MODRA workshop (Bangkok, Thailand)
+- **August 2025**: Our [paper](https://gh.bmj.com/content/10/8/e019111) on enhancing global health security through greater inclusion of the Global South in infectious disease modelling is out in BMJ Global Health
 - **July 2025**: Got accepted for MORU-OUCRU Discovery Research Academy program (MODRA) [cohort 2](https://www.oucru.org/modra-announces-2025-cohort/)!
 - **June 2025**: MIDSEA Summer School 2025 in Indonesia! I taught inference track and assisted our brilliant local organiser from Dept. of Mathematics, UGM to ensure things were run smoothly (Yogyakarta, Indonesia)
 - **April 2025**: Participated in [dengue multisource suveillance workshop](https://www.who.int/indonesia/news/detail/16-05-2025-indonesia-and-who-ramp-up-dengue-fight-with-smarter-surveillance) which is the follow up from the 2024 one (Semarang, Indonesia)
-- **February 2025**: Gave a half-day online workshop on 'Modeling Infectious Disease Transmission to Mitigate Potential Outbreak Threats', which is part of GAMA-ICTM 2025 conference (Yogyakarta, Indonesia) 
+- **March 2025**: Our [paper](https://doi.org/10.1186/s12916-025-03902-9) on spatiotemporal heterogeneity in malaria transmission across Indonesia (2010–2019) is out in BMC Medicine
+- **February 2025**: Gave a half-day online workshop on 'Modeling Infectious Disease Transmission to Mitigate Potential Outbreak Threats', which is part of GAMA-ICTM 2025 conference (Yogyakarta, Indonesia)
 
 ## 2024
 
+- **December 2024**: Our [paper](https://www.nature.com/articles/s41467-024-54891-x) on mitigating risks of malaria and other vector-borne diseases in Indonesia's new capital city is out in Nature Communications
 - **November 2024**: Participated in Collaboratory Workshop: Dengue Analytics Workshop (Berlin, Germany)
 - **November 2024**: Participated in the Infectious Disease Modelling Conference 2024 in Bangkok as part of the early career researcher (ECR) committee (Bangkok, Thailand)
+- **September 2024**: Gave an online guest lecture on mathematical modelling of infectious diseases for Masters of Public Health students at University of Indonesia
 - **August 2024**: Participated and [presented](https://www.youtube.com/watch?v=u9ls9IjslzY) in [Isaac Newton Institute's Modelling and inference for pandemic preparedness](https://www.newton.ac.uk/event/mip/) (Cambridge, the UK)
+- **August 2024**: Gave an online guest lecture on mathematical modelling of infectious diseases for Masters of Public Health students at Monash University Indonesia
 - **July 2024**: Participated in [dengue multisource suveillance workshop](https://www.who.int/indonesia/news/detail/30-07-2024-indonesia-takes-decisive--pioneering-action-to-strengthen-multisource-collaborative-surveillance-for-dengue) (Semarang, Indonesia)
 - **June 2024**: Participated in MIDSEA Summer School 2024 (Quy Nhon, Vietnam). I taught the inference track for one day and then took the geospatial modelling track
 - **April 2024**: Joined Saw Swee Hock School of Public Health, National University of Singapore as Research Fellow

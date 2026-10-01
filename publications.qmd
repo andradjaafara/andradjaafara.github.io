@@ -2,34 +2,120 @@
 pagetitle: "Bimandra Djaafara"
 title: "Publications"
 toc: false
+include-after-body:
+  text: |
+    <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      const headings = Array.from(document.querySelectorAll('h2')).filter(h =>
+        /^\d{4}$/.test(h.textContent.trim())
+      );
+      if (!headings.length) return;
+      const nav = document.createElement('nav');
+      nav.className = 'year-nav';
+      const label = document.createElement('div');
+      label.className = 'year-nav-label';
+      label.textContent = 'Year';
+      nav.appendChild(label);
+      const links = headings.map(h => {
+        if (!h.id) h.id = 'year-' + h.textContent.trim();
+        const a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent.trim();
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          h.scrollIntoView({ behavior: 'smooth' });
+        });
+        nav.appendChild(a);
+        return { a: a, h: h };
+      });
+      document.body.appendChild(nav);
+      const obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            links.forEach(function (l) { l.a.classList.remove('active'); });
+            var match = links.find(function (l) { return l.h === entry.target; });
+            if (match) match.a.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-10% 0px -80% 0px' });
+      headings.forEach(function (h) { obs.observe(h); });
+    });
+    </script>
 ---
 
-```{r bibArticle}
+```{r pubs}
 #| results: asis
 #| echo: false
 
-RefManageR::BibOptions(check.entries = FALSE,
-                       style = "markdown",
-                       bib.style = "numeric",
-                       sorting = "ydnt",
-                       max.names = 99)
+library(RefManageR)
 
-bib <- RefManageR::ReadBib("publications.bib", .Encoding = "UTF-8",
-                           check = 'warn')
+BibOptions(check.entries = FALSE)
+bib <- ReadBib("publications.bib", .Encoding = "UTF-8", check = "warn")
+bib <- sort(bib, sorting = "ydnt")
 
-# All entries (articles and preprints)
-bibArticle <- bib
+# Strip LaTeX curly braces used for capitalisation protection
+clean <- function(s) gsub("[{}]", "", as.character(s))
 
-# Capture output and highlight author name
-output <- capture.output(print(bibArticle))
-output <- paste(output, collapse = "\n")  # collapse to single string for multi-line patterns
-output <- gsub("B\\. A\\. Djaafara", "**B. A. Djaafara**", output)
-output <- gsub("B\\. Djaafara", "**B. Djaafara**", output)
-output <- gsub("B\\. A\\. Djafaara", "**B. A. Djafaara**", output)  # alternate spelling
-output <- gsub("B\\. Djafaara", "**B. Djafaara**", output)  # alternate spelling
-output <- gsub("\\s*\\(visited on [^)]+\\)", "", output)  # remove "visited on" dates
-output <- gsub("URL:\\s*\\[.+?\\]\\(.+?\\)", "", output, perl=TRUE)  # remove redundant URL links (DOI is enough)
-output <- gsub("\\.\\s*\\.", ".", output)  # clean up double periods
-output <- gsub("(https://www\\.medrxiv\\.org)", "**[Preprint]** \\1", output)  # mark preprints
-cat(output)
+# Format authors as "Family I. I." abbreviation style
+fmt_authors <- function(author_obj) {
+  n <- length(author_obj)
+  out <- vapply(seq_len(n), function(i) {
+    p      <- author_obj[i]
+    fam    <- paste(clean(if (!is.null(p$family) && length(p$family) > 0) p$family else ""), collapse = " ")
+    giv    <- paste(clean(if (!is.null(p$given)  && length(p$given)  > 0) p$given  else ""), collapse = " ")
+    parts  <- strsplit(trimws(giv), "\\s+")[[1]]
+    parts  <- parts[nchar(parts) > 0]
+    inits  <- if (length(parts) > 0) paste(paste0(substr(parts, 1, 1), "."), collapse = " ") else ""
+    trimws(paste(fam, inits))
+  }, character(1))
+  paste(out, collapse = ", ")
+}
+
+highlight <- function(s) {
+  s <- gsub("Djaafara B\\. A\\.", "<strong>Djaafara BA</strong>", s)
+  s <- gsub("Djaafara B\\.",     "<strong>Djaafara B</strong>",  s)
+  s
+}
+
+all_years <- sort(unique(sapply(bib, function(e) e$year)), decreasing = TRUE)
+
+for (yr in all_years) {
+  cat(paste0("\n\n## ", yr, "\n\n"))
+
+  for (key in names(bib)) {
+    e <- bib[[key]]
+    if (e$year != yr) next
+
+    title <- clean(e$title)
+
+    doi   <- if (!is.null(e$doi)) clean(e$doi) else ""
+    url   <- if (!is.null(e$url)) clean(e$url) else ""
+    doi_clean <- gsub("^https?://doi\\.org/", "", doi)
+    link  <- if (nchar(doi_clean) > 0) paste0("https://doi.org/", doi_clean) else url
+
+    title_html <- if (nchar(link) > 0) {
+      paste0('<a href="', link, '">', title, "</a>")
+    } else title
+
+    authors_html <- highlight(fmt_authors(e$author))
+
+    journal <- if (!is.null(e$journal))   clean(e$journal)   else
+               if (!is.null(e$publisher)) clean(e$publisher) else ""
+
+    note  <- if (!is.null(e$note)) clean(e$note) else ""
+    badge <- if (grepl("[Pp]reprint", note)) ' <span class="preprint-badge">Preprint</span>' else ""
+
+    doi_link <- if (nchar(doi_clean) > 0) {
+      paste0(' · <a class="pub-doi" href="https://doi.org/', doi_clean, '">', doi_clean, "</a>")
+    } else ""
+
+    cat(paste0(
+      '<div class="pub-entry">\n',
+      '  <div class="pub-title">',   title_html,   "</div>\n",
+      '  <div class="pub-authors">', authors_html, "</div>\n",
+      '  <div class="pub-venue"><em>', journal, "</em>", doi_link, badge, "</div>\n",
+      "</div>\n\n"
+    ))
+  }
+}
 ```
