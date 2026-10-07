@@ -10,7 +10,7 @@
 <atom:link href="https://andradjaafara.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Thu, 23 Jan 2025 17:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 23 Jan 2025 16:00:00 GMT</lastBuildDate>
 <item>
   <title>Welcome to my blog</title>
   <dc:creator>Bimandra Djaafara</dc:creator>
@@ -43,7 +43,7 @@
   <category>news</category>
   <category>personal</category>
   <guid>https://andradjaafara.github.io/posts/2025-01-24-welcome/</guid>
-  <pubDate>Thu, 23 Jan 2025 17:00:00 GMT</pubDate>
+  <pubDate>Thu, 23 Jan 2025 16:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
